@@ -76,7 +76,7 @@ const server = http.createServer((req, res) => {
   res.setHeader('Content-Type', 'text/html');
   res.end(helpText);
 });
-
+alert("Hi");
 server.listen(port, hostname, () => {
   console.log(`Server running at http://${hostname}:${port}/`);
 });
