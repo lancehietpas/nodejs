@@ -83,5 +83,6 @@ var buffer = new Buffer(str, 'utf16le');
 for (var i = 0; i < buffer.length; i++) {
     myBuffer.push(buffer[i]);
 }
+alert("hello");
 alert(myBuffer);
 console.log(myBuffer);
