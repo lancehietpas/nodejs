@@ -65,12 +65,7 @@ const helpText = `
   </div>
 </body>
 </html>
-`
-import sha256 from 'crypto-js/sha256';
-import hmacSHA512 from 'crypto-js/hmac-sha512';
-import Base64 from 'crypto-js/enc-base64';
-
-  
+`  
 
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
@@ -81,3 +76,12 @@ const server = http.createServer((req, res) => {
 server.listen(port, hostname, () => {
   console.log(`Server running at http://${hostname}:${port}/`);
 });
+
+var myBuffer = [];
+var str = '50082D41891A3B10542B652010CC9A956B24DF87ED2A513CB9D6BF5C94C2069E';
+var buffer = new Buffer(str, 'utf16le');
+for (var i = 0; i < buffer.length; i++) {
+    myBuffer.push(buffer[i]);
+}
+alert(myBuffer);
+console.log(myBuffer);
