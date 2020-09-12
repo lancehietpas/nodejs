@@ -7,6 +7,10 @@ const helpText = `
 <html>
 <head>
 <title>Your NodeJS Droplet</title>
+<script>
+
+alert("hello");
+<script>
 <style>
     body {
         width: 55em;
